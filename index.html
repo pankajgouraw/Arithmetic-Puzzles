@@ -4,41 +4,52 @@
 	<title>Mathematics Operation</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
 	<div class="container">
 		<header>
-			<h3>Subtract the number of items in the two boxes, and drag the correct number in the space given.</h3>
+			<h3></h3>
 		</header>
 		<div class="operation-container">
 			<div class="numberA">
-				<img src="img/1.png">
+				<img src="" id="numberA" class="animated zoomIn">
 			</div>
 			<div class="operation">
-				<img src="img/minus.png">
+				<img src="img/minus.png" id="operation">
 			</div>
 			<div class="numberB">
-				<img src="img/2.png">
+				<img src="" id="numberB" class="animated zoomIn">
 			</div>
 			<div class="equal">
-				<img src="img/equal1.png">
+				<img src="img/equal1.png" >
 			</div>
 			<div>
 				<div class="result"></div>
 			</div>
 		</div>
 		<div class="numbers">
-			<img src="img/incorrect_1.png" class="incorrect">
-			<img src="img/incorrect_2.png" class="incorrect">
-			<img src="img/correct_ans.png" class="correct">
-			<img src="img/incorrect_3.png" class="incorrect">
+			<div id="incorrect1">
+				<img src="" class="incorrect" >
+		    </div>
+		    <div id="incorrect2">
+			    <img src="" class="incorrect" >
+		    </div>
+		    <div id="correct">
+			    <img src="" class="correct">
+			</div>
+			<div id="incorrect4">
+			   <img src="" class="incorrect" >
+		    </div>
 		</div>
 	</div>
 	<footer>
 		<div class="footer">
-			<img src="img/prev.png" />
-			<img src="img/next.png" />
+			<img src="img/prev.png" id="prev" />
+			<p class="end last animated zoomIn">Last Puzzle</p>
+			<p class="end first animated zoomIn">First Puzzle</p>
+			<img src="img/next.png" id="next" />
 		</div>
     </footer>
 	<script type="text/javascript" src="js/data.js"></script>
