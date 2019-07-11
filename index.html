@@ -2,10 +2,14 @@
 <html>
 <head>
 	<title>Mathematics Operation</title>
+	<meta charset="UTF-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/enableDragMobile.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -23,24 +27,24 @@
 				<img src="" id="numberB" class="animated zoomIn">
 			</div>
 			<div class="equal">
-				<img src="img/equal1.png" >
+				<img src="img/equal1.png" class="ui-widget-content">
 			</div>
 			<div>
-				<div class="result"></div>
+				<div class="result" id="droppable"></div>
 			</div>
 		</div>
 		<div class="numbers">
 			<div id="incorrect1">
-				<img src="" class="incorrect" >
+				<img src="" id="incorrect1" class="incorrect" >
 		    </div>
 		    <div id="incorrect2">
-			    <img src="" class="incorrect" >
+			    <img src="" id="incorrect2" class="incorrect" >
 		    </div>
 		    <div id="correct">
-			    <img src="" class="correct">
+			    <img src="" id="correct" class="correct">
 			</div>
 			<div id="incorrect4">
-			   <img src="" class="incorrect" >
+			   <img src="" id="incorrect3" class="incorrect" >
 		    </div>
 		</div>
 	</div>
@@ -52,6 +56,17 @@
 			<img src="img/next.png" id="next" />
 		</div>
     </footer>
+
+    <!-- audio container -->
+    <div class="audioContainer">
+       <audio id="button" src="audio/button.mp3"></audio>
+       <audio id="correctAnswer" src="audio/wellDone.mp3"></audio>
+       <audio id="incorrectAnswer" src="audio/tryAgain.mp3"></audio>
+       <audio id="backgroundSound" src="audio/backgroundSound.mp3"></audio>
+       <!-- <iframe src="audio/backgroundSound.mp3" autoplay="true" loop style="display:none" id="iframeAudio" ></iframe> -->
+    </div>
+    <!-- end audio container -->
+
 	<script type="text/javascript" src="js/data.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
